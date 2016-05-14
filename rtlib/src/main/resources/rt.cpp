@@ -35,4 +35,3 @@ extern "C" {
         GC_init();
     }
 }
-

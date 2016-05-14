@@ -7,6 +7,10 @@ designed specifically for Scala. Project is currently in pre-release stage.
 [Follow us on twitter to be first to know about upcoming
 updates.](http://twitter.com/scala_native)
 
+## iOS demo
+
+![demo-native](demo-native-ios.png)
+
 ## Features
 
 * **Low-level primitives**.

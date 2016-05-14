@@ -72,7 +72,11 @@ object ScalaNativePluginInternal {
       val binary    = target / (moduleName.value + "-out")
       val verbose   = nativeVerbose.value
       val clang     = nativeClang.value
-      val clangOpts = nativeClangOptions.value
+      val clangOpts = nativeClangOptions.value ++
+                      Seq("-framework",  "CoreFoundation", "-framework", "Foundation", "-lobjc") ++
+                      Seq("-arch", "i386", "-target", "i386-apple-darwin10", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk", "-mios-simulator-version-min=9.3", "-framework", "Foundation") ++
+                      // crossbuild of bdw gc library
+                      Seq("-I/Users/timothyklim/Development/bdwgc/include", "-L/Users/timothyklim/Development/bdwgc/.libs")
       val dotpath   = nativeEmitDependencyGraphPath.value
       val opts      = new NativeOpts(classpath,
                                      abs(appll),

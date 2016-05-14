@@ -1,0 +1,10 @@
+{	CFBundleDevelopmentRegion = "en";
+	CFBundleExecutable = "demonative-out";
+	CFBundleIdentifier = "demonative-out";
+	CFBundleInfoDictionaryVersion = "6.0";
+	CFBundleName = "demonative-out";
+	CFBundlePackageType = "APPL";
+	CFBundleShortVersionString = "1.0";
+	CFBundleSignature = "????";
+	CFBundleVersion = "1";
+}
